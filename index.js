@@ -17,7 +17,7 @@ function loadNews () {
             console.log(currentArticle.media);
             $(".content").append(`<div class = "news-card2">
             <div class = "story-img2">
-              <img src = "https://static01.nyt.com/images/2020/09/02/science/02VIRUS-CDC/02VIRUS-CDC-thumbStandard.jpg">
+              <img src = "">
               <p>${currentArticle.published_date}</p>
             </div>
             <div class = "story-info">
@@ -32,4 +32,15 @@ function loadNews () {
     })
 }
 
+// TODO detect location based on the user's IP address
+const someZipCode = "90210";
+// TODO sign up for an account at openweathermap in order to get an API key
+const someAPIKey = apiKey;
 
+function getWeatherData() {
+  fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${someZipCode},us&appid=${someAPIKey}`)
+  .then(data => data.json())
+  .then(jsonData => console.log(`\nWEATHER DATA\n${JSON.stringify(jsonData, null, 2)}\n`));
+}
+
+getWeatherData();
