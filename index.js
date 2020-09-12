@@ -15,7 +15,7 @@ function loadNews () {
 
         const articleHTML = articleArray.map(currentArticle =>{
             
-            console.log(currentArticle.media[0]);
+            // console.log(currentArticle.media[0]);
 
             const imgSRC = currentArticle.media[0] ? currentArticle.media[0]["media-metadata"][0].url : "";
 
