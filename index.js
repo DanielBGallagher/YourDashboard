@@ -15,7 +15,7 @@ function loadNews () {
 
         const articleHTML = articleArray.map(currentArticle =>{
             
-            console.log(currentArticle.media[0]);
+            // console.log(currentArticle.media[0]);
 
             const imgSRC = currentArticle.media[0] ? currentArticle.media[0]["media-metadata"][0].url : "";
 
@@ -47,3 +47,11 @@ function getWeatherData() {
 }
 
 getWeatherData();
+
+
+function getDateAndTime() {
+    let date=moment().format('LLLL');
+    let dateH2=$(`<h2 id='day' class='day'>${date}<h2>`)
+    dateH2.appendTo($('#date-time'));
+}
+getDateAndTime();
