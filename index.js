@@ -19,7 +19,7 @@ function loadNews () {
 
             const imgSRC = currentArticle.media[0] ? currentArticle.media[0]["media-metadata"][0].url : "";
 
-            $(".content").append(`<div class = "news-card2">
+              $(".content").append(`<div class = "news-card2">
             <div class = "story-img2">
               <img src = "${imgSRC}">
               <p>${currentArticle.published_date}</p>

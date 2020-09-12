@@ -7,7 +7,7 @@
 .nyt-feed {
     border: black;
     border-style: solid;
-    
+    background-color: rgb(241, 241, 212);
 }
 
 .nyt-feed > .feed-header > .title {
@@ -30,6 +30,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     align-content: stretch;
+    
 }
 
 .story-img2 {
@@ -41,4 +42,13 @@
 }
 .story-info {
     flex-basis: 67%;
+}
+
+.header {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+body{
+    background-color: rgb(0, 255, 255);
 }
