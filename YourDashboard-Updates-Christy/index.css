@@ -1,0 +1,66 @@
+/************** index.html file ***********/ 
+
+.banner {
+    margin-top: 20%;
+    padding: 10%;
+}
+
+ .nyt-feed {
+
+    border: black;
+    border-style: solid;
+    
+}
+
+
+.weather-feed {
+    border: black;
+    border-style: solid;
+        
+}
+
+ 
+ .feed-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+} 
+
+
+ 
+/************ nytimes.js file **************/
+
+/*
+.nyt-feed > .feed-header > .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-card {
+    width: 50%;
+}
+
+.news-card > .story-img img {
+    width: 100%;
+}
+
+.content > .news-card2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: stretch;
+}
+
+.story-img2 {
+    flex-basis:33%;
+}
+
+.story-img2 img {
+    width: 50%
+}
+.story-info {
+    flex-basis: 67%;
+} */
