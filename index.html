@@ -9,9 +9,19 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel ="stylesheet" href = "index.css">
 
-
+    <!--CSS Stylesheets-->
     <link rel="/index.css"/>
-    <title>Home Dashboard</title>
+    <link rel="/nytimes.css"/>
+    <link rel="/weather.css"/>
+
+    <!-- Favicon Rocket Images-->
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico">
+    <title> Worldly</title>
+
+
+
+
   </head>
 
   <body>
@@ -19,25 +29,112 @@
     <h1 id="banner" class="banner">Welcome!</h1>
     <div id="date-time" class="date-time"></div>
     </div>
-    <div class = "container">
-      <div class = "nyt-feed">
 
-        <div class = "feed-header">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark primary-color fixed-top">
+
+      <div class="container">
+
+        <!-- Navbar brand -->
+        <a class="navbar-brand" href="#">Worldly</a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
+
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Quick Menu</a>
+              <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Something/a>
+                <a class="dropdown-item" href="#">Something else</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+
+          </ul>
+          <!-- Links -->
+
+          <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form>
+        </div>
+        <!-- Collapsible content -->
+
+      </div>
+
+    </nav>
+    <!--/.Navbar-->
+
+
+    <div class = "container">
+      <div>
+      <h1 id="banner" class="banner">Welcome!</h1>
+      <div id="date-time" class="date-time"></div>
+      </div>
+    </div>
+
+
+
+
+    <div class = "row">
+      <div class = "col-md">        
+
+        <div class = "weather-feed">
+
+          <div class= "weather" id="weather">
+          <div class= "title col-md">
+            <h1>Weather</h1>
+            <h5>From the <a href = "https://openweathermap.org/" target = "blank_">Open Weather Map</a></h5>
+    
+            </div>
+          </div>
+          </div>    
+      </div>
+    </div>
+    
+    
+    
+      <!-- <div class = "nyt-feed"></div> -->
+      <div class = "row">
+        <div class = "col-md">
+        <div class = "nyt-feed">
+          <div class = "feed-header">
           <div class = "title">
             <h1>News</h1>
             <h5>From the <a href = "https://www.nytimes.com/" target = "blank_">New York Times</a></h5>
             <hr>
           </div>
+          </div>
+          <div class = "content"></div>
         </div>
-
-        <div class = "content">
-
-
-          
-
-
-
         </div>
+      </div>        
+
+
+
 
 
 
@@ -49,6 +146,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src = "preview.js"></script>
-    <script src = "index.js"></script>
+    <script src = "nytimes.js"></script>
+    <script src = "weather.js"></script>
   </body>
+
+
+
+
+<!--Footer-->
+  <footer>
+
+  </footer>
+<!--Footer-->
+
+
 </html>
