@@ -1,15 +1,37 @@
-.feed-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    
+/************** index.html file ***********/ 
+
+.banner {
+    margin-top: 20%;
+    padding: 10%;
 }
-.nyt-feed {
+
+ .nyt-feed {
+
     border: black;
     border-style: solid;
     
 }
 
+
+.weather-feed {
+    border: black;
+    border-style: solid;
+        
+}
+
+ 
+ .feed-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+} 
+
+
+ 
+/************ nytimes.js file **************/
+
+/*
 .nyt-feed > .feed-header > .title {
     display: flex;
     flex-direction: column;
@@ -41,4 +63,4 @@
 }
 .story-info {
     flex-basis: 67%;
-}
+} */
