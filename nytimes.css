@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    
+    padding-top: 10%;
 } 
 
 .nyt-feed > .feed-header > .title {
@@ -15,6 +15,7 @@
 
 .news-card {
     width: 50%;
+    
 }
 
 .news-card > .story-img img {
@@ -27,7 +28,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     align-content: stretch;
-    
+    padding: 10%;
 }
 
 .story-img2 {
@@ -35,8 +36,15 @@
 }
 
 .story-img2 img {
-    width: 50%
+    width: 80%
 }
 .story-info {
     flex-basis: 67%;
+}
+
+.nyt-feed {
+    background-color: yellow;
+    border: black;
+    border-style: solid;
+
 }

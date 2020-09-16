@@ -36,6 +36,11 @@ function loadNews () {
     })
 }
 
+
+// opacity: 0.2;
+// background-image: url("/img/newspaper.jpg");
+// background-size: contain;"
+
 // TODO detect location based on the user's IP address
 const someZipCode = "90210";
 
