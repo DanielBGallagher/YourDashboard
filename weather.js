@@ -41,4 +41,9 @@ function getWeatherData() {
 
     )}
 
+    //  Make weather background white   //
+    // function weatherBackground() {
+    //   document.getElementById(".weather-feed") = white;
+    // }
 
+    // console.log(`weatherBackground`);

@@ -1,45 +1,26 @@
-/************** index.html file ***********/ 
-
 html,
 body,
 header {
     height: 100%;
     width: 100%;
-    padding: 5%;
-    background: url("/img/world.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
-#splashscreen {
-    position: absolute;
-    background: no-repeat center center fixed;
-    width:100%;
-    background-color: rgb(255, 255, 255, .5);
-}
 
 
 body{
     background-color: aqua;
+
 }
 
 
 
 .date-time{
     text-align:center;
+    margin: 5%;
 }
 
-.nyt-feed {
-
-    border: black;
-    border-style: solid;
-    background-color: rgb(241, 241, 212);
-}
-
-.weather-feed {
-    border: black;
-    border-style: solid;
-        
+footer {
+    text-align: center;
+    margin: 10%;
+    font-size: small;
 }

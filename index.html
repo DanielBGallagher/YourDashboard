@@ -7,24 +7,23 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel ="stylesheet" href = "index.css">
+
+    <!--HTML Landing Page-->
+    <link rel="stylesheet" href="/landing.html"/>
 
     <!--CSS Stylesheets-->
-    <link rel="/index.css"/>
-    <link rel="/nytimes.css"/>
-    <link rel="/weather.css"/>
+    <link rel="stylesheet" href="/index.css"/>
+    <link rel="stylesheet" href="/nytimes.css"/>
+    <link rel="stylesheet" href="/weather.css"/>
 
     <!-- Favicon Rocket Images-->
 
     <link rel="icon" type="image/" href="/img/rocket.png">
     <title> Worldly</title>
 
-    <div>  
-      <div id="splashscreen">
-        <h1 ><a href="#" class="welcome_link">Welcome!</a></h1>
-      </div>
-    </div>
-
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+    
 
   </head>
 
@@ -68,7 +67,7 @@
               <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">Quick Menu</a>
               <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Something/a>
+                <a class="dropdown-item" href="#">Something</a>
                 <a class="dropdown-item" href="#">Something else</a>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
@@ -101,6 +100,10 @@
     <!--/.Mask-->
 
 
+      <div class="header-img">
+        <img src="/img/world.jpg" alt="world" height= "50%" width="100%"/>
+      </div>
+
     <div class = "banner">
       
       <div id="date-time" class="date-time"></div>
@@ -109,14 +112,14 @@
 
 
 
-
+<div class = "container">
     <div class = "row">
       <div class = "col-md">        
 
         <div class = "weather-feed">
 
           <div class= "weather" id="weather">
-          <div class= "title col-md">
+          <div class= "title">
             <h1>Weather</h1>
             <h5>From the <a href = "https://openweathermap.org/" target = "blank_">Open Weather Map</a></h5>
     
@@ -124,12 +127,9 @@
           </div>
           </div>    
       </div>
-    </div>
-    
-    
-    
+          
       <!-- <div class = "nyt-feed"></div> -->
-      <div class = "row">
+
         <div class = "col-md">
         <div class = "nyt-feed">
           <div class = "feed-header">
@@ -144,8 +144,8 @@
         </div>
       </div>        
 
-
-
+    </div>
+    </div>
 
 
 
@@ -167,7 +167,7 @@
 
 <!--Footer-->
   <footer>
-
+    <span>Photo by <a href="https://unsplash.com/@iammrcup?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mr Cup / Fabien Barral</a> on <a href="https://unsplash.com/s/photos/newspaper?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
   </footer>
 <!--Footer-->
 
