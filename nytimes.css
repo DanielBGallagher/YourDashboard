@@ -47,16 +47,17 @@
 }
 .story-info {
     flex-basis: 67%;
-    background-color: rgb(255, 255, 255, .6);
+    background-color: rgb(255, 255, 255, .8);
     padding: 8px;
 }
 
 .nyt-feed {
-    background-image: url("/img/newspaper.jpg");
+    background-image: url("");
     background-position: top 25% right 55%;
+    background-color: rgb(255, 255, 255, .8);
     border: black;
     border-style: solid;
     margin-top: 5%;
-    height: 8%;
+    height: 5%;
     overflow: scroll;
 }

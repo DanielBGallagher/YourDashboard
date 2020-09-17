@@ -36,15 +36,53 @@ body{
   }
 
 .date-time{
-    padding: 8%;
-    margin-bottom: 2%;
-    text-align:center;
-    background-color: rgb(255, 255, 255, .7);
+    padding-top: 20%;
+    margin-bottom: 6%;
+    text-align: center;
+
 }
 
+.day {
+  background-color: rgb(255, 255, 255, .8);
+  width: 60%;
+  padding: 1%;
+}
+
+.searchbardiv {
+  text-align: center;
+  margin: 10%;
+  width: 80%;
+}
+
+
+form.searchbar input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+
+form.searchbar button:hover {
+  background: #0b7dda;
+}
+
+form.searchbar::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 footer {
     text-align: center;
     margin: 10%;
     font-size: small;
+}
+
+@media screen and (max-width: 600px) {
+  .searchbar input[type=text] {
+    border: 1px solid #ccc;
+  }
 }
