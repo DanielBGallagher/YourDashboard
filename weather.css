@@ -1,8 +1,13 @@
-.weather-feed {
-    border: black;
-    border-style: solid;
-    background-color: red;
-    padding: 10%;
+.weather {
+    background-image: url("/img/weather.jpg");
+    background-position: top 58% right 60%;
     text-align: center;
+    padding: 10%;
+    height: 8%;
+    margin: 5%;
 }
 
+.weather > .title {
+    padding-bottom: 20%;
+    text-align: center;
+}

@@ -13,9 +13,3 @@ function getDateAndTime() {
   dateH2.appendTo($('#date-time'));
 }
 // getDateAndTime();
-
-$('.welcome_link').click(function() { 
-  $(this).parent('#splashscreen').fadeOut(500);
-});
-
-document.body.style.backgroundColor = "white";
