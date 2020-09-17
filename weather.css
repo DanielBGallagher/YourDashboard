@@ -1,8 +1,16 @@
-.weather-feed {
+.weather {
+    background-image: url("");
+    background-position: top 58% right 60%;
+    background-color: rgb(255, 255, 255, .8);
+    text-align: center;
+    padding: 10%;
+    height: 5%;
+    margin: 5%;
     border: black;
     border-style: solid;
-    background-color: red;
-    padding: 10%;
-    text-align: center;
 }
 
+.weather > .title {
+    padding-bottom: 20%;
+    text-align: center;
+}
