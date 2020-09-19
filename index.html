@@ -105,38 +105,28 @@
 
 <div class="container">
 
-      <div class="dailyforecastli">
-        <ul class="weathertable" id="weathertableid">
-          <li class="">Today</li>
-            <a href="">linkbacktoweather</a>
-              <h3>
-                <span class="lfjoB" style="-webkit-line-clamp:2">Today</span>
-              </h3>
-              
-              <div class="temperature"></div>
-        </ul>
-
-      </div>
-
-      <div class= "weather" id="weather">
-        <section class="card" id="dailyweather" title="daily forecast" ctaurl="">
+      <div class= "dailyforecastli" id="weather">
+        <section class="card weather" id="dailyweather" title="daily forecast" ctaurl="">
       
           <header id="headerid" class="headerclass">
-            <h2 class="dailyforecast">Weather</h2>
+            <h2 class="dailyforecast">Daily Weather</h2>
             <h5>From the <a href = "https://openweathermap.org/" target = "blank_">Open Weather Map</a></h5>    
-      
+            
+          </header>
 
-    </header>
-
-  </section>
-
-        <div id="dad-joke" class="dad-joke"></div>
+            <ul class="weathertable" id="weathertableid">                                 
+                  <div class="temperature"></div>
+            </ul>
 
 
+
+        </section>
+      </div>
 </div>
 
+<div id="dad-joke" class="dad-joke"></div>
 
-  
+  <div class="container"> 
     <div class = "searchbardiv">
       <form class="searchbar" action="/action_page.php" id="searchbar">
         <label for="searchzip">
@@ -147,28 +137,29 @@
 
       </form>
     </div>
+  </div>
+
+  <div id="dad-joke" class="dad-joke"></div>
 
   <div class = "container">
-    <div class = "row">
-
-
-      <div class = "col-md">
+    <div class="row">
+      <div class="col-sm">
         <div class = "nyt-feed">
           <div class = "feed-header">
             <div class = "title">
               <h1>News</h1>
               <h5>From the <a href = "https://www.nytimes.com/" target = "blank_">New York Times</a></h5>
+              <div class = "content"></div>
+                
               <hr>
             </div>
           </div>
-          
-          <div class = "content"></div>
-        
         </div>
-      </div>    
-
-    </div> <!--end of row div-->
-  </div> <!--end of container div-->
+      </div>  
+         
+        </div>
+    </div>        
+</div> <!--end of container div-->
 
 
   <!--Footer-->

@@ -1,4 +1,6 @@
-
+body {
+    height: auto;
+}
 
  .feed-header {
 
@@ -6,6 +8,7 @@
     flex-direction: row;
     justify-content: center;
     padding-top: 10%;
+
 } 
 
 .nyt-feed > .feed-header > .title {
@@ -13,10 +16,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+ 
 }
 
 .news-card {
-    margin: 60%;    
     width: 50%;
     
 }
@@ -27,38 +30,37 @@
 
 .content > .news-card2{
     
-    display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
-    align-content: stretch;
     padding: 10%;
 
 }
 
 .story-img2 {
-    flex-basis:33%;
     background-color: rgb(255, 255, 255, .6);
     padding: 8px;
 }
 
 .story-img2 img {
-    width: 80%
+    width: auto;
 
 }
 .story-info {
-    flex-basis: 67%;
+
     background-color: rgb(255, 255, 255, .8);
     padding: 8px;
 }
 
 .nyt-feed {
-    background-image: url("");
     background-position: top 25% right 55%;
     background-color: rgb(255, 255, 255, .8);
     border: black;
     border-style: solid;
- 
-    height: 5%;
-    overflow: scroll;
+
 }
+
+.content {
+    height: 25%;
+    overflow-y: auto;
+}
+ 
