@@ -64,4 +64,8 @@ function getWeatherByZip () {
 //Make weather background white   //
 
 // document.getElementById(".weather-feed").style.backgroundColor = rgb(255, 255, 255, .6);
+
+     //Make weather background white   //
+    
+      // document.getElementById(".weather-feed").style.backgroundColor = rgb(255, 255, 255, .6);
     
