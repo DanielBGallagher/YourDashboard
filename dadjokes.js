@@ -1,19 +1,25 @@
 $().ready(() =>{
 
 
-    dadjokes();
+    // dadjokes();
   
   
   })
 
 function dadjokes () {
-    fetch('https://icanhazdadjoke.com/')
+    fetch('https://icanhazdadjoke.com/',{
+        method:'GET',
+        headers:{
+            'Accept':'application/json'
+        }
+    })
     .then(laughs => laughs.json())
     .then(response => {
-
-        const funnydata = response.data;
+    
+        const funnydata = response.joke;
         console.log(funnydata)
-
+        $(".dad-joke").append(`<p>${response.joke}</p>`)
 
     })
 } ;
+dadjokes();
