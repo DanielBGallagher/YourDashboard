@@ -9,8 +9,11 @@ body{
     background-position: top 30% center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+
 }
 
+/* 
 .navbar {
     background-color: #333;
     position: fixed;
@@ -25,7 +28,7 @@ body{
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     text-decoration: none;
     font-size: 17px;
   }
@@ -33,25 +36,28 @@ body{
   .navbar a:hover {
     background-color: #ddd;
     color: black;
-  }
+  } */
 
 .date-time{
-    padding-top: 20%;
     margin-bottom: 6%;
     text-align: center;
 
 }
 
 .day {
-  background-color: rgb(255, 255, 255, .8);
-  width: 60%;
-  padding: 1%;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 5%;
+  position: fixed;
+
+
 }
 
 .searchbardiv {
+
   text-align: center;
-  margin: 10%;
-  width: 80%;
+  margin: 30% auto 15%;
+  width: 100%;
 }
 
 
@@ -81,8 +87,3 @@ footer {
     font-size: small;
 }
 
-@media screen and (max-width: 600px) {
-  .searchbar input[type=text] {
-    border: 1px solid #ccc;
-  }
-}

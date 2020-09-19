@@ -1,4 +1,4 @@
-<!doctype html>
+<!Doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -8,15 +8,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <!--HTML Landing Page-->
-    <link rel="stylesheet" href=".html">
 
     <!--CSS Stylesheets-->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="nytimes.css">
     <link rel="stylesheet" href="weather.css">
     <link rel="stylesheet" href="dadjokes.css">
-    <link rel="stylesheet" href="yelp.css">
+
 
     <!-- Favicon Rocket Images-->
 
@@ -97,16 +95,23 @@
    
     <!--/.Navbar-->
 
-
+<div class="nav-scroll">
+  <nav class="fixed-top">
     <div class = "banner">
       <div id="date-time" class="date-time"></div>
     </div>
+  </nav>
+</div>
 
-
+  
     <div class = "searchbardiv">
-      <form class="searchbar" action="/action_page.php">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+      <form class="searchbar" action="/action_page.php" id="searchbar">
+        <label for="searchzip">
+          <input type="text" placeholder="Search Zip Code" name="searchbyzip" class="searchbyzip" id="searchbyzip"> 
+        
+          <button type="button" class="btn btn-primary" onclick="getWeatherByZip()"><i class="fa fa-search"></i></button>
+        </label>
+
       </form>
     </div>
 
@@ -129,26 +134,38 @@
         </div>
       </div>    
 
-
-      <div class = "col-md">       
+   
         <div class= "weather" id="weather">
-          <div class= "title">
-            <h1>Weather</h1>
-            <h5>From the <a href = "https://openweathermap.org/" target = "blank_">Open Weather Map</a></h5>    
-          </div>
-        </div> 
-      </div>
+          <section class="card" id="dailyweather" title="daily forecast" ctaurl="">
+
+            <header id="headerid" class="headerclass">
+              <h2 class="dailyforecast">Weather</h2>
+              <h5>From the <a href = "https://openweathermap.org/" target = "blank_">Open Weather Map</a></h5>    
+
+            </header>
+
+            <div class="dailyforecastli">
+              <ul class="weathertable" id="weathertableid">
+                <li class="">Today</li>
+                  <a href="">linkbacktoweather</a>
+                    <h3>
+                      <span class="lfjoB" style="-webkit-line-clamp:2">Today</span>
+                    </h3>
+                    <div class="temperature"></div>
 
 
 
-      <div class = "col-md">
-        <div class = "yelp">
-          <div class="title">
-            <h1>Yelp</h1>
-          </div>
+              </ul>
+
+
+            </div>
+
+          </section>
+
+
         </div>
       </div>
-    
+
     </div> <!--end of row div-->
   </div> <!--end of container div-->
 
@@ -156,11 +173,12 @@
   <!--Footer-->
   <div>
     <footer>
-      <span>Photo by <a href="https://unsplash.com/@iammrcup?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mr Cup / Fabien Barral</a> on <a href="https://unsplash.com/s/photos/newspaper?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-      <span>Photo by <a href="https://unsplash.com/@derekduran?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Derek Duran</a> on <a href="https://unsplash.com/s/photos/blue-sky-clouds?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
-      <<span>Photo by <a href="https://unsplash.com/@pineapple?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pineapple Supply Co.</a> on <a href="https://unsplash.com/s/photos/pineapple-balloon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>    </footer>
-      Icons made by <a href="https://www.flaticon.com/free-icon/search_1246347?term=magnifying%20glass&page=3&position=47" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+      <span>Photo by <a href="https://unsplash.com/@iammrcup?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mr Cup / Fabien Barral</a> on <a href="https://unsplash.com/s/photos/newspaper?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span><br>
+      <span>Photo by <a href="https://unsplash.com/@derekduran?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Derek Duran</a> on <a href="https://unsplash.com/s/photos/blue-sky-clouds?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span><br>
+      <span>Photo by <a href="https://unsplash.com/@pineapple?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pineapple Supply Co.</a> on <a href="https://unsplash.com/s/photos/pineapple-balloon?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span><br>    
+      <span>Icons made by <a href="https://www.flaticon.com/free-icon/search_1246347?term=magnifying%20glass&page=3&position=47" title="srip">srip</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></span>
       <!--Footer-->
+    </footer>
     </div>
   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

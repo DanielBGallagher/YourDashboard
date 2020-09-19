@@ -8,7 +8,7 @@ $().ready(() =>{
 })
 
 function getWeatherData() {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${someZipCode},us&appid=${weather}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${someZipCode},us&appid=${weatherapi}`)
     .then(data => data.json())
     .then(jsonData => {
       
@@ -36,12 +36,32 @@ function getWeatherData() {
       <h5>${jsonData.weather[0].description} </h5>`)
 
 
+      const form = document.getElementById( "searchbar" );
+
+      form.addEventListener( "button", function (event) {
+        event.preventDefault();
+
+
+      })
+ 
     }
     
 
     )}
 
-     //Make weather background white   //
-    
-      document.getElementById(".weather-feed").style.backgroundColor = rgb(255, 255, 255, .6);
+
+// TODO detect location based on the user's Zip Code (IP address)
+//const someZipCode = $(".searchbyzip")
+
+function getWeatherByZip () {
+  let someZipCode = $(".searchbyzip").append(getWeatherData);
+  console.log(someZipCode);
+
+
+}
+
+
+//Make weather background white   //
+
+// document.getElementById(".weather-feed").style.backgroundColor = rgb(255, 255, 255, .6);
     
