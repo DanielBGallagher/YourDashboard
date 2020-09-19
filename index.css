@@ -39,12 +39,14 @@ body{
   } */
 
 .date-time{
+
     margin-bottom: 6%;
     text-align: center;
 
 }
 
 .day {
+  top: 0;
   background-color: rgb(255, 255, 255);
   width: 100%;
   padding: 5%;

@@ -1,16 +1,16 @@
-.weather {
-    background-image: url("");
-    background-position: top 58% right 60%;
+
+.weather, .card {
+    position: relative;
+    right: 0;
+    margin-top: 20%;
     background-color: rgb(255, 255, 255, .8);
     text-align: center;
-    padding: 10%;
-    height: 5%;
-    margin: 5%;
     border: black;
     border-style: solid;
 }
 
-.weather > .title {
-    padding-bottom: 20%;
-    text-align: center;
+.card {
+    position: absolute;
+    right: 0;
+    margin-top: 20%;
 }
