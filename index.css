@@ -9,11 +9,11 @@ body{
     background-position: top 30% center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
+    text-align: center;
 
 }
 
-/* 
+
 .navbar {
     background-color: #333;
     position: fixed;
@@ -26,7 +26,7 @@ body{
   .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #333;
     text-align: center;
     padding: 10px;
     text-decoration: none;
@@ -35,55 +35,30 @@ body{
   
   .navbar a:hover {
     background-color: #ddd;
-    color: black;
-  } */
+    color: rgb(96, 177, 252);
+  }
 
 .date-time{
-
     margin-bottom: 6%;
     text-align: center;
-
 }
 
 .day {
-  top: 0;
   background-color: rgb(255, 255, 255);
   width: 100%;
-  padding: 5%;
+  padding-bottom: 2%;
   position: fixed;
 
-
-}
-
-.searchbardiv {
-
-  text-align: center;
-  margin: 20% auto 15%;
-  width: 100%;
 }
 
 
-form.searchbar input[type=text] {
-  padding: 5px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
+.searchbarhomediv {
+  margin: 10%;
 }
 
-
-form.searchbar button:hover {
-  background: #0b7dda;
-}
-
-form.searchbar::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 footer {
+    margin-top: 20%;
     text-align: center;
     font-size: small;
 }

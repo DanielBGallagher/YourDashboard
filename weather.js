@@ -62,15 +62,15 @@ function getWeatherData() {
 
 
 // TODO detect location based on the user's Zip Code (IP address)
-function getZip (someZipCode) {
+// function getZip (someZipCode) {
 
-  const someZipCode = "";
+//   const someZipCode = "";
 
-  for(i=0; i<zip; i++) {}
+//   for(i=0; i<zip; i++) {}
 
-}
+// }
 
-//const someZipCode = "90210";
+const someZipCode = "90210";
 
 function getWeatherByZip () {
   let someZipCode = $(".searchbyzip").append(getWeatherData);

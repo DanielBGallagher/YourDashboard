@@ -43,3 +43,5 @@ function loadNews () {
 
 
 document.getElementByClass("content").style.maxHeight = "15px";
+
+

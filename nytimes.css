@@ -1,5 +1,7 @@
 body {
     height: auto;
+    margin-top: 25%;
+    margin-bottom: 20%;
 }
 
  .feed-header {
@@ -28,27 +30,24 @@ body {
     width: 100%;
 }
 
-.content {
-    max-height: fit-content;
-}
 
 .content > .news-card2{
     
     flex-direction: row;
     justify-content: flex-start;
-    padding: 6%;
+    padding: 5% 10%;
 
 }
 
 .story-img2 {
     background-color: rgb(255, 255, 255, .6);
-    padding: 8px;
+    padding: 10px;
 }
 
 .story-img2 img {
     width: auto;
-
 }
+
 .story-info {
 
     background-color: rgb(255, 255, 255, .8);
