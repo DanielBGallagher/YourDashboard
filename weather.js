@@ -50,8 +50,27 @@ function getWeatherData() {
     )}
 
 
+// function getWeatherData() {
+//   fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${someZipCode},us&appid=${weather}`)
+//   .then(data => data.json())
+//   .then(jsonData => console.log(`\nWEATHER DATA\n${JSON.stringify(jsonData, null, 2)}\n`));
+
+// }
+
+// getWeatherData();
+
+
+
 // TODO detect location based on the user's Zip Code (IP address)
-//const someZipCode = $(".searchbyzip")
+function getZip (someZipCode) {
+
+  const someZipCode = "";
+
+  for(i=0; i<zip; i++) {}
+
+}
+
+//const someZipCode = "90210";
 
 function getWeatherByZip () {
   let someZipCode = $(".searchbyzip").append(getWeatherData);

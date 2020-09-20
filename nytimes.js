@@ -41,17 +41,5 @@ function loadNews () {
 // background-image: url("/img/newspaper.jpg");
 // background-size: contain;"
 
-// TODO detect location based on the user's IP address
-const someZipCode = "90210";
 
-
-// function getWeatherData() {
-//   fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${someZipCode},us&appid=${weather}`)
-//   .then(data => data.json())
-//   .then(jsonData => console.log(`\nWEATHER DATA\n${JSON.stringify(jsonData, null, 2)}\n`));
-
-// }
-
-// getWeatherData();
-
-
+document.getElementByClass("content").style.maxHeight = "15px";
