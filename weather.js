@@ -7,12 +7,18 @@ $().ready(() =>{
 
 })
 
-function getWeatherData() {
+//getElementById('search').addEventListener()
+
+//$('.form').click()
+
+function getWeatherData(zip) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${someZipCode},us&appid=${weatherapi}`)
     .then(data => data.json())
     .then(jsonData => {
       
-      console.log(`\nWEATHER DATA\n${JSON.stringify(jsonData, null, 2)}\n`);
+    let zip =""
+
+    console.log(`\nWEATHER DATA\n${JSON.stringify(jsonData, null, 2)}\n`);
 
     
     let kelvinCurrent = jsonData.main.temp
@@ -36,13 +42,13 @@ function getWeatherData() {
       <h5>${jsonData.weather[0].description} </h5>`)
 
 
-      const form = document.getElementById( "searchbar" );
+      // const form = document.getElementById( "searchbar" );
 
-      form.addEventListener( "button", function (event) {
-        event.preventDefault();
+      // form.addEventListener( "button", function (event) {
+      //   event.preventDefault();
 
 
-      })
+      // })
  
     }
     
@@ -72,10 +78,29 @@ function getWeatherData() {
 
 const someZipCode = "90210";
 
-function getWeatherByZip () {
-  let someZipCode = $(".searchbyzip").append(getWeatherData);
-  console.log(someZipCode);
+function getZip () {
 
+  var request;
+  var input1 = document.getElementById('searchbyzip');
+  var apiCall = 'https://api.openweathermap.org/data/2.5/weather?zip=${input1},us&appid=${weatherapi}'
+
+  var weatherbyzip = apiCall + input1.value;
+
+  request = new XMLHttpRequest();
+
+  request.open('GET', weatherbyzip, true);
+  request.onload = function() {
+    var data = JSON.parse(this.response);
+    if (request.status >=200 && request.status < 400) {
+      console.log(data);
+    }
+
+    else {
+      console.log(input1.value);
+    }
+  }
+
+  request.send();
 
 }
 

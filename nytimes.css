@@ -1,11 +1,9 @@
 body {
     height: auto;
-    margin-top: 25%;
-    margin-bottom: 20%;
+    margin: 25% 20%;
 }
 
  .feed-header {
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -49,7 +47,7 @@ body {
 }
 
 .story-info {
-
+    
     background-color: rgb(255, 255, 255, .8);
     padding: 8px;
 }

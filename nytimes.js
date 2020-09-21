@@ -42,6 +42,3 @@ function loadNews () {
 // background-size: contain;"
 
 
-document.getElementByClass("content").style.maxHeight = "15px";
-
-

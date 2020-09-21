@@ -2,6 +2,7 @@ html,
 body {
     height: auto;
     width: auto;
+    
 }
 
 body{
@@ -34,7 +35,6 @@ body{
   }
   
   .navbar a:hover {
-    background-color: #ddd;
     color: rgb(96, 177, 252);
   }
 
