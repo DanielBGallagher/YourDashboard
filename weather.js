@@ -1,38 +1,5 @@
 
 
-// var fetchWeather;
-// var api = "http://api.openweathermap.org/data/2.5/weather?zip=";
-// var apikey = "8c5785d2d6e48e5c2e504db748496ff8";
-// var input;
-
-
-// function getZip () {
-//   createCanvas(400, 200);
-//   var button = select('.zip');
-//   button.mousePressed(askWeather);
-
-//   input = select('.zip');
-// }
-
-// function askWeather () {
-//   var url = api + zip + input.value() + apikey;
-//   loadJSON(url, gotData);
-// }
-
-
-// function gotData (data) {
-//   fetchWeather = data;
-// }
-
-// $().ready(() =>{
-
-
-
-//   getWeatherData();
-
-
-// })
-
 const someZipCode = document.getElementById('zip').value;
 
 function getWeatherData() {
@@ -78,7 +45,7 @@ function getWeatherData() {
 
 // TODO detect location based on the user's Zip Code (IP address)
 
-
+// One attempt to call weather api from search 
 // function getZip () {
 
 //   var request;
@@ -105,4 +72,39 @@ function getWeatherData() {
 
 // }
 
+
+
+// 2nd attempt to call weather api from search  
+// var fetchWeather;
+// var api = "http://api.openweathermap.org/data/2.5/weather?zip=";
+// var apikey = "8c5785d2d6e48e5c2e504db748496ff8";
+// var input;
+
+
+// function getZip () {
+//   createCanvas(400, 200);
+//   var button = select('.zip');
+//   button.mousePressed(askWeather);
+
+//   input = select('.zip');
+// }
+
+// function askWeather () {
+//   var url = api + zip + input.value() + apikey;
+//   loadJSON(url, gotData);
+// }
+
+
+// function gotData (data) {
+//   fetchWeather = data;
+// }
+
+// $().ready(() =>{
+
+
+
+//   getWeatherData();
+
+
+// })
 
