@@ -1,16 +1,14 @@
 
 
-const someZipCode = document.getElementById('zip').value;
 
+  
 function getWeatherData() {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${someZipCode}&appid=${weather}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${someZipCode},us&appid=${weather}`)
     .then(data => data.json())
     .then(jsonData => {
       
-
-
-
     console.log(`\nWEATHER DATA\n${JSON.stringify(jsonData, null, 2)}\n`);
+
 
     
     let kelvinCurrent = jsonData.main.temp
@@ -34,14 +32,16 @@ function getWeatherData() {
       <h5>${jsonData.weather[0].description} </h5>`)
       
 
-    }
-    
+})
 
 
-    )
+}
+
+  const someZipCode = document.getElementById('zip').value;
   
+  someZipCode.onsubmit = function () {
+    someZipCode.reset();
   }
-
 
 // TODO detect location based on the user's Zip Code (IP address)
 

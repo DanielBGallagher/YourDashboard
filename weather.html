@@ -103,17 +103,18 @@
 
     <!-- Weather Data -->
     <div class="container"> 
-        <div class = "searchbardiv">
-          <form class="form" action="/action_page.php" id="formzip" method="GET">
+      <div id = "searchbardiv">
+          <form class="form" action="#" id="formzip">
             <label for="searchzip">
-              <input type="text" placeholder="Search Zip Code" name="zip" class="zip" id="zip"> 
-            
-              <input type="button" class="btn btn-primary" onclick="getWeatherData()" value="Submit"></i>
+              <input type="text" placeholder="Search Zip Code" name="zip" class="zip form-control clearFields" id="zip"> 
             </label>
-    
+
+            <input type="button" class="btn btn-primary" onclick="getWeatherData()" value="Submit">
+
           </form>
           <p id="log"></p>
-        </div>
+
+      </div>
       </div>
     
 
