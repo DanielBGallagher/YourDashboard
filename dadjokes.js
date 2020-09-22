@@ -17,8 +17,7 @@ function dadjokes () {
     .then(response => {
     
         const funnydata = response.joke;
-        console.log(funnydata)
-        $(".dad-joke").append(`<p>${response.joke}</p>`)
+        $(".dad-joke").append(`<p id= dad-joke>${response.joke}</p>`)
 
     })
 } ;
