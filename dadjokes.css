@@ -1,11 +1,6 @@
 .dad-joke {
-<<<<<<< HEAD
-    background-color: rgb(255, 255, 255, .8);
-
-=======
     position: relative;
     margin: 40% auto 10%;
     background-color: rgb(255, 255, 255, .8);
     padding: 2%;
->>>>>>> dfb4c6c80f8ec97e84df334b66b4fe17fc0430af
 }
