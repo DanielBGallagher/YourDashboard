@@ -37,11 +37,10 @@ function getWeatherData() {
 
 }
 
-  const someZipCode = document.getElementById('zip').value;
+
+    const someZipCode = document.getElementById('zip').value;
   
-  someZipCode.onsubmit = function () {
-    someZipCode.reset();
-  }
+ 
 
 // TODO detect location based on the user's Zip Code (IP address)
 
