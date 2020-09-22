@@ -17,7 +17,9 @@ function loadNews () {
             
             // console.log(currentArticle.media[0]);
 
-            const imgSRC = currentArticle.media[0] ? currentArticle.media[0]["media-metadata"][0].url : "";
+            const imgSRC = currentArticle.media[0] ? currentArticle.media[0]["media-metadata"][1].url : "";
+
+            const readMore = currentArticle.url[0] ? currentArticle.url : "";
 
             $(".content").append(`<div class = "news-card2">
             <div class = "story-img2">
@@ -27,7 +29,7 @@ function loadNews () {
             <div class = "story-info">
               <h4>${currentArticle.title}</h4>
               <p>${currentArticle.abstract}</p>
-              <a href = "currentArticle.url">Read More</a>
+              <a href= "${readMore}">Read More</a>
             </div>
             
           </div>`)
