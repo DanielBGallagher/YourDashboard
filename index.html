@@ -130,7 +130,7 @@
               <input type="text" placeholder="Search Zip Code" name="zip" class="zip form-control clearFields" id="zip"> 
             </label>
 
-            <input type="button" class="btn btn-primary" onclick="getWeatherData()" value="Submit" id="btn">
+            <input type="submit" class="btn btn-primary" value="Submit" id="btn">
 
           </form>
           <p id="log"></p>
@@ -149,7 +149,12 @@
             <h5>From the <a href = "https://openweathermap.org/" target = "blank_">Open Weather Map</a></h5>    
             
             </header>
-      
+            <ul class="weathertable" id="weathertableid">                                 
+              <div class="temperature"></div>
+             </ul>
+             <div class="weather-data">
+               <div class="weather-name"></div>
+             </div>
         </section>
         </div>
     </div>

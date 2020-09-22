@@ -1,7 +1,7 @@
 
-  $('#searchbar').submit((e)=>{
+  $('#formzip').submit((e)=>{
     e.preventDefault()
-    let someZipCode=document.getElementById('searchbyzip').value;
+    let someZipCode=document.getElementById('zip').value;
     console.log(someZipCode)
     getWeatherData(someZipCode);
  
@@ -9,12 +9,12 @@
 
 
   
-function getWeatherData() {
+function getWeatherData(zip) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${weather}`)
     .then(data => data.json())
     .then(jsonData => {
       
-    console.log(`\nWEATHER DATA\n${JSON.stringify(jsonData, null, 2)}\n`);
+    // console.log(`\nWEATHER DATA\n${JSON.stringify(jsonData, null, 2)}\n`);
 
 
     
