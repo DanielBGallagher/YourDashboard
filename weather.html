@@ -103,11 +103,11 @@
 
     <div class="container"> 
         <div class = "searchbardiv">
-          <form class="searchbar" action="/action_page.php" id="searchbar">
+          <form class="searchbar" id="searchbar">
             <label for="searchzip">
               <input type="text" placeholder="Search Zip Code" name="searchbyzip" class="searchbyzip" id="searchbyzip"> 
             
-              <button type="button" class="btn btn-primary" value="submit"><i class="fa fa-search"></i></button>
+              <button type="submit" class="btn btn-primary" value="submit"><i class="fa fa-search"></i></button>
             </label>
     
           </form>
@@ -117,7 +117,7 @@
 
     <div class="container">
 
-        <div class= "dailyforecastli" id="weather">
+        <div class="dailyforecastli" id="weather">
         <section class="card weather" id="dailyweather" title="daily forecast" ctaurl="">
         
             <header id="headerid" class="headerclass">
@@ -129,8 +129,9 @@
             <ul class="weathertable" id="weathertableid">                                 
              <div class="temperature"></div>
             </ul>
-      
-      
+            <div class="weather-data">
+              <div class="weather-name"></div>
+            </div>
       
         </section>
         </div>
