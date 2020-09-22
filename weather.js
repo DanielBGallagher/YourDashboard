@@ -26,8 +26,8 @@ function getWeatherData(zip) {
     $(".weather-name").html(`
       <h5>${jsonData.name}</h5>
       <h5>${fahrenheitCurrent.toFixed()} &#176; Fahrenheit</h5>
-      <h5>${fahrenheitMin.toFixed()} &#176; Fahrenheit</h5>
-      <h5>${fahrenheitMax.toFixed()} &#176; Fahrenheit</h5>
+      <h5>The low is ${fahrenheitMin.toFixed()} &#176; Fahrenheit</h5>
+      <h5>The high is ${fahrenheitMax.toFixed()} &#176; Fahrenheit</h5>
       <h5>${jsonData.weather[0].description} </h5>`)
     })
 }
