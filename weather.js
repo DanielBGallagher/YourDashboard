@@ -1,4 +1,3 @@
-$().ready(() =>{
 
   $('#searchbar').submit((e)=>{
     e.preventDefault()
@@ -10,19 +9,13 @@ $().ready(() =>{
 
 
   
-
-})
-
-//getElementById('search').addEventListener()
-
-//$('.form').click()
-
-function getWeatherData(zip) {
+function getWeatherData() {
     fetch(`https://api.openweathermap.org/data/2.5/weather?zip=${zip},us&appid=${weather}`)
     .then(data => data.json())
     .then(jsonData => {
+      
+    console.log(`\nWEATHER DATA\n${JSON.stringify(jsonData, null, 2)}\n`);
 
-    // console.log(`\nWEATHER DATA\n${JSON.stringify(jsonData, null, 2)}\n`);
 
     
     let kelvinCurrent = jsonData.main.temp

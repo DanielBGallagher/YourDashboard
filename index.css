@@ -24,6 +24,7 @@ footer{
     width: 100%;
     display: block;
     transition: top 0.3s;
+    height: 30%;
   }
   
   .navbar a {
@@ -41,22 +42,21 @@ footer{
   }
 
 .date-time{
-    margin-bottom: 6%;
-    text-align: center;
+  margin-bottom: 6%;
+  text-align: center;
+  display: inline-block;
+  position: relative;
 }
 
 .day {
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  padding-bottom: 2%;
-  position: fixed;
+  padding-bottom: 2% 2%;
 
 }
 
 
-.searchbarhomediv {
+/* .searchbarhomediv {
   margin: 10%;
-}
+} */
 
 
 footer {
